@@ -16,8 +16,9 @@ NUMBER_LOOKUP = {
 
 NUMBER_REGEX = "|".join(
     NUMBER_LOOKUP.keys()
-)  # Regular expression that matches all digits as words or as numbers
-
+)  
+# Regular expression that matches all digits as words or as numbers
+# Looks like this: zero|one|two|three|four|five|six|seven|eight|nine|0|1|2|3|4|5|6|7|8|9
 
 def get_first_and_last_digit(line):
     """

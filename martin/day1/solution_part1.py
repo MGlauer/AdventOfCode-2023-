@@ -3,9 +3,8 @@ def get_first_and_last_digit(line):
     Returns the concatenation of the first and last digit in `line`.
     """
     digits = [c for c in line if c.isdigit()]  # get all digits
-    return 10 * int(digits[0]) + int(
-        digits[-1]
-    )  # Concatenation of two single digits a,b is equivalent to 10*a+b
+    # Concatenation of two single digits a,b is equivalent to 10*a+b
+    return 10 * int(digits[0]) + int(digits[-1])  
 
 
 def run():
